@@ -10,9 +10,11 @@
 </head>
 <body>
 
-<header><h1>Join Kayla Vital Plan</h1></header>
+<header class="site-header">
+    <h1>Join Kayla Vital Plan</h1>
+</header>
 
-<nav>
+<nav class="site-nav">
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="myfitnessjourney.html">My Fitness Journey</a></li>
@@ -20,72 +22,74 @@
         <li><a href="foodandfitness.html">Food & Fitness</a></li>
         <li><a href="workoutsandtraining.html">Workouts & Training</a></li>
         <li><a href="joinvitalplan.html">Join Kayla Vital Plan</a></li>
-        <li><a href="accordion.html">Accordion</a></li>
-        <li><a href="cardgroup.html">Card Group</a></li>
+        <li><a href="accordion.html">Frequently Asked Questions</a></li>
+        <li><a href="cardgroup.html">Our Programs</a></li>
     </ul>
 </nav>
 
-<section>
-    <header><h2>Contact Me</h2></header>
-    <form action="mailto:mykarich@icloud.com" method="post" enctype="text/plain">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+<div class="content">
+    <section class="contact-form">
+        <header><h2>Contact Me</h2></header>
+        <form action="mailto:mykarich@icloud.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
 
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" required><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
 
-        <label for="weight">Weight:</label>
-        <input type="number" id="weight" name="weight" required><br><br>
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" name="weight" required><br><br>
 
-        <label for="goal">Fitness Goal:</label>
-        <input type="text" id="goal" name="goal" required><br><br>
+            <label for="goal">Fitness Goal:</label>
+            <input type="text" id="goal" name="goal" required><br><br>
 
-        <label for="allergies">Food Allergies:</label>
-        <input type="text" id="allergies" name="allergies"><br><br>
+            <label for="allergies">Food Allergies:</label>
+            <input type="text" id="allergies" name="allergies"><br><br>
 
-        <label for="history">Health History:</label>
-        <textarea id="history" name="history" rows="4" cols="50"></textarea><br><br>
+            <label for="history">Health History:</label>
+            <textarea id="history" name="history" rows="4" cols="50"></textarea><br><br>
 
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-    </form>
-</section>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </section>
 
-<section class="gallery">
-    <header><h2>Gallery</h2></header>
-    <div class="gallery-item">
-        <a target="_blank" href="img_gym.jpg">
-            <img src="img_gym.jpg" alt="Gym">
-        </a>
-        <div class="desc">Gym</div>
-    </div>
+    <section class="gallery">
+        <header><h2>Gallery</h2></header>
+        <div class="gallery-item">
+            <a target="_blank" href="img_gym.jpg">
+                <img src="img_gym.jpg" alt="Gym">
+            </a>
+            <div class="desc">Gym</div>
+        </div>
 
-    <div class="gallery-item">
-        <a target="_blank" href="img_workout.jpg">
-            <img src="img_workout.jpg" alt="Workout">
-        </a>
-        <div class="desc">Workout</div>
-    </div>
+        <div class="gallery-item">
+            <a target="_blank" href="img_workout.jpg">
+                <img src="img_workout.jpg" alt="Workout">
+            </a>
+            <div class="desc">Workout</div>
+        </div>
 
-    <div class="gallery-item">
-        <a target="_blank" href="img_mealprep.jpg">
-            <img src="img_mealprep.jpg" alt="Meal Prep">
-        </a>
-        <div class="desc">Meal Prep</div>
-    </div>
-</section>
+        <div class="gallery-item">
+            <a target="_blank" href="img_mealprep.jpg">
+                <img src="img_mealprep.jpg" alt="Meal Prep">
+            </a>
+            <div class="desc">Meal Prep</div>
+        </div>
+    </section>
 
-<section class="contact">
-    <header><h2>Contact Me</h2></header>
-    <ol>
-        <li><a href="https://www.instagram.com/kaykay.jpeg/">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/in/mykarich/">LinkedIn</a></li>
-    </ol>
-</section>
+    <section class="contact">
+        <header><h2>Contact Me</h2></header>
+        <ol>
+            <li><a href="https://www.instagram.com/kaykay.jpeg/">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/mykarich/">LinkedIn</a></li>
+        </ol>
+    </section>
+</div>
 
-<footer> 
+<footer class="site-footer">
     Last updated on July 23, 2024 <br> 
-    <a href="mailto:mykarich@icloud.com">Email me</a> 
+    <a href="mailto:mykarich@icloud.com">Email me</a>
 </footer>
 
 </body>

@@ -1,4 +1,9 @@
-/* styles.css */
+/* General page styles */
+body {
+    background-color: SlateBlue;
+    color: white;
+    font-family: Arial, sans-serif;
+}
 
 /* Fluid grid container */
 .grid-container {
@@ -8,7 +13,7 @@
 }
 
 /* Styled header */
-.site-header {
+header.site-header {
     background-color: #3D52A0;
     color: white;
     text-align: center;
@@ -16,53 +21,53 @@
     font-size: 24px;
 }
 
-/* Styled navigation */
-.site-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+/* Vertical navigation bar */
+nav.site-nav {
+    background-color: grey;
+    padding: 10px;
+    border: 2px solid darkblue;
+    width: 220px; /* Adjust as needed */
 }
 
-.site-nav li {
-    margin-right: 1rem;
+nav.site-nav ul {
+    list-style-type: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
-.site-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+nav.site-nav li {
+    margin: 10px 0;
 }
 
-/* Color scheme */
-/* You can customize these colors */
-.site-header {
+nav.site-nav a {
+    text-decoration: none !important;
+    color: white !important;
+    font-weight: bold !important;
+    display: block;
+    padding: 8px 16px;
     background-color: #3D52A0;
+    border-radius: 4px;
 }
 
-.site-nav {
-    background-color: #ADBBDA;
+nav.site-nav a:hover {
+    background-color: darkblue;
 }
-
-/* Validation (add your own validation styles) */
-/* Example: */
-/* .error { border: 2px solid red; } */
 
 /* Gallery Styles */
-.container {
+.gallery-container {
     margin-top: 20px;
 }
 
-.row {
+.gallery-row {
     display: flex;
     flex-wrap: wrap;
 }
 
-.col-lg-4, .col-md-6, .col-sm-12 {
+.gallery-col {
     padding: 10px;
 }
 
-.img-fluid {
+.gallery-img {
     max-width: 100%;
     height: auto;
     border: 2px solid #ddd;
@@ -71,9 +76,10 @@
 
 /* Adjust Footer */
 footer {
-    width: 100%;
-    background-color: #f1f1f1;
+    width: calc(100% - 2rem); /* Adjust width to not cover fixed nav */
+    background-color: #ADD8E6;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 1rem;
     position: relative;
 }
+
