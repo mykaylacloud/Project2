@@ -12,13 +12,18 @@ body {
     grid-gap: 1rem;
 }
 
-/* Styled header */
+/* Styled and decorative header */
 header.site-header {
-    background-color: #3D52A0;
+    background: linear-gradient(to right, #3D52A0, #6A82FB); /* Gradient background */
     color: white;
     text-align: center;
-    padding: 1rem;
-    font-size: 24px;
+    padding: 2rem;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif; /* Using Google Font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow effect */
+    border-bottom: 5px solid #FFD700; /* Gold border at the bottom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    border-radius: 0 0 15px 15px; /* Rounded corners at the bottom */
 }
 
 /* Vertical navigation bar */
@@ -82,4 +87,3 @@ footer {
     padding: 10px 1rem;
     position: relative;
 }
-

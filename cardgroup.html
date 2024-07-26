@@ -6,7 +6,36 @@
     <link rel="stylesheet" href="styles2.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"> <!-- Google Font Link -->
     <title>Kayla Vital Fitness</title>
+    <style>
+        /* CSS for horizontal gallery with captions */
+        .gallery {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto; /* Allows horizontal scrolling if needed */
+            gap: 20px; /* Space between gallery items */
+            padding: 10px;
+        }
+
+        .gallery-item {
+            flex: 0 0 auto; /* Prevents the items from shrinking */
+            text-align: center; /* Centers the caption below the image */
+            max-width: 300px; /* Adjust width as needed */
+        }
+
+        .gallery-item img {
+            width: 100%; /* Makes the image fill the container's width */
+            height: auto; /* Maintains the aspect ratio of the image */
+            border-radius: 8px; /* Optional: adds rounded corners */
+        }
+
+        .card-text {
+            margin-top: 10px; /* Adds space between the image and text */
+            font-size: 1rem; /* Sets the font size for the text */
+            color: #333; /* Optional: sets the color of the text */
+        }
+    </style>
 </head>
 <body>
 
@@ -30,48 +59,26 @@
 <div class="content">
     <section>
         <header><h2>Our Programs</h2></header>
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="workout1.jpg" class="img-fluid rounded-start" alt="Workout 1">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Strength Training</h5>
-                        <p class="card-text">Build muscle and increase your strength with our targeted strength training programs.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a target="_blank" href="workout1.jpg">
+                    <img src="workout1.jpg" alt="Workout 1">
+                </a>
+                <div class="card-text">Strength Training: Build muscle and increase your strength with our targeted strength training programs.</div>
             </div>
-        </div>
 
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="workout2.jpg" class="img-fluid rounded-start" alt="Workout 2">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Cardio Workouts</h5>
-                        <p class="card-text">Boost your cardiovascular health and endurance with our high-energy cardio sessions.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
+            <div class="gallery-item">
+                <a target="_blank" href="workout2.jpg">
+                    <img src="workout2.jpg" alt="Workout 2">
+                </a>
+                <div class="card-text">Cardio Workouts: Boost your cardiovascular health and endurance with our high-energy cardio sessions.</div>
             </div>
-        </div>
 
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="workout3.jpg" class="img-fluid rounded-start" alt="Workout 3">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Flexibility Training</h5>
-                        <p class="card-text">Improve your flexibility and prevent injuries with our specialized flexibility routines.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
+            <div class="gallery-item">
+                <a target="_blank" href="workout3.jpg">
+                    <img src="workout3.jpg" alt="Workout 3">
+                </a>
+                <div class="card-text">Flexibility Training: Improve your flexibility and prevent injuries with our specialized flexibility routines.</div>
             </div>
         </div>
     </section>
