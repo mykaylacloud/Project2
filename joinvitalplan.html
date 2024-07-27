@@ -3,38 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles2.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles2.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"> <!-- Google Font Link -->
     <title>Kayla Vital Fitness</title>
-    <style>
-        /* CSS to ensure images are displayed horizontally with captions below */
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px; /* Adds space between gallery items */
-            justify-content: center; /* Centers the gallery items */
-        }
-
-        .gallery-item {
-            text-align: center; /* Centers the caption below each image */
-            flex: 1 1 calc(33% - 40px); /* Flexbox to make images responsive and take up one-third of the container width */
-            max-width: calc(33% - 40px); /* Ensures the item does not exceed one-third of the container width */
-        }
-
-        .gallery-item img {
-            width: 100%; /* Makes the image fill the container's width */
-            height: auto; /* Maintains the aspect ratio of the image */
-            border-radius: 8px; /* Optional: adds rounded corners */
-        }
-
-        .desc {
-            margin-top: 10px; /* Adds space between the image and caption */
-            font-size: 1rem; /* Sets the font size for the caption */
-            color: #333; /* Optional: sets the color of the caption */
-        }
-    </style>
 </head>
 <body>
 
@@ -86,21 +60,21 @@
         <header><h2>Gallery</h2></header>
         <div class="gallery-item">
             <a target="_blank" href="img_gym.jpg">
-                <img src="img_gym.jpg" alt="Gym">
+                <img src="img_gym.jpg" alt="Gym" class="fixed-dimensions-img">
             </a>
             <div class="desc">Gym</div>
         </div>
 
         <div class="gallery-item">
             <a target="_blank" href="img_workout.jpg">
-                <img src="img_workout.jpg" alt="Workout">
+                <img src="img_workout.jpg" alt="Workout" class="fixed-dimensions-img">
             </a>
             <div class="desc">Workout</div>
         </div>
 
         <div class="gallery-item">
             <a target="_blank" href="img_mealprep.jpg">
-                <img src="img_mealprep.jpg" alt="Meal Prep">
+                <img src="img_mealprep.jpg" alt="Meal Prep" class="fixed-dimensions-img">
             </a>
             <div class="desc">Meal Prep</div>
         </div>

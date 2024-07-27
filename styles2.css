@@ -1,29 +1,47 @@
+/* Fixed dimensions for images with rounded edges */
+.fixed-dimensions-img {
+    width: 630px;
+    height: 630px;
+    border-radius: 15px; /* Rounded edges */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Gallery styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between gallery items */
+    justify-content: center; /* Centers the gallery items */
+}
+
+.gallery-item {
+    text-align: center; /* Centers the caption below each image */
+    flex: 1 1 calc(33% - 40px); /* Flexbox to make images responsive and take up one-third of the container width */
+    max-width: calc(33% - 40px); /* Ensures the item does not exceed one-third of the container width */
+}
+
+.gallery-item img {
+    width: 100%; /* Makes the image fill the container's width */
+    height: auto; /* Maintains the aspect ratio of the image */
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.desc {
+    margin-top: 10px; /* Adds space between the image and caption */
+    font-size: 1rem; /* Sets the font size for the caption */
+    color: #333; /* Optional: sets the color of the caption */
+}
+
 /* General page styles */
 body {
     background-color: SlateBlue;
     color: white;
     font-family: Arial, sans-serif;
-}
-
-/* Fluid grid container */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1rem;
-}
-
-/* Styled and decorative header */
-header.site-header {
-    background: linear-gradient(to right, #3D52A0, #6A82FB); /* Gradient background */
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    font-size: 36px;
-    font-family: 'Roboto', sans-serif; /* Using Google Font */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow effect */
-    border-bottom: 5px solid #FFD700; /* Gold border at the bottom */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    border-radius: 0 0 15px 15px; /* Rounded corners at the bottom */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Makes the footer stick to the bottom */
 }
 
 /* Vertical navigation bar */
@@ -58,32 +76,50 @@ nav.site-nav a:hover {
     background-color: darkblue;
 }
 
-/* Gallery Styles */
-.gallery-container {
-    margin-top: 20px;
-}
-
-.gallery-row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.gallery-col {
-    padding: 10px;
-}
-
-.gallery-img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-}
-
-/* Adjust Footer */
-footer {
-    width: calc(100% - 2rem); /* Adjust width to not cover fixed nav */
-    background-color: #ADD8E6;
+/* Styled and decorative header */
+header.site-header {
+    background: linear-gradient(to right, #3D52A0, #6A82FB); /* Gradient background */
+    color: white;
     text-align: center;
-    padding: 10px 1rem;
-    position: relative;
+    padding: 2rem;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif; /* Using Google Font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow effect */
+    border-bottom: 5px solid #FFD700; /* Gold border at the bottom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    border-radius: 0 0 15px 15px; /* Rounded corners at the bottom */
+}
+/* Accordion styles */
+.accordion-button {
+    background-color: #3D52A0; /* Background color of the accordion button */
+    color: white; /* Text color of the accordion button */
+    border: 1px solid #3D52A0; /* Border color of the accordion button */
+    border-radius: 8px; /* Rounded corners for the accordion button */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #6A82FB; /* Background color when the accordion is expanded */
+    color: white; /* Text color when the accordion is expanded */
+}
+
+.accordion-button:hover {
+    background-color: #2C3E50; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+.accordion-body {
+    background-color: transparent; /* Remove white background */
+    color: #333; /* Text color of the accordion body */
+    border: 1px solid #ddd; /* Border color around the accordion body */
+    border-radius: 0 0 8px 8px; /* Rounded corners at the bottom of the accordion body */
+}
+/* Footer styling */
+footer.site-footer {
+    background-color: #D3D3D3; /* Light grey background */
+    color: black; /* Black text color */
+    text-align: center;
+    padding: 15px 1rem; /* Adequate padding for readability */
+    position: relative; /* Ensures proper positioning relative to the content */
+    border-top: 1px solid #bbb; /* Optional: border at the top of the footer */
 }
